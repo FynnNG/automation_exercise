@@ -21,6 +21,8 @@ public class LoginTests extends BaseTest {
         loginPage.login(email, password);
 
         Assert.assertTrue(homePage.isLoggedIn(), "User should be logged in.");
+
+        homePage.clicklogoutButton();
     }
 
     @Test

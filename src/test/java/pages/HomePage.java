@@ -15,7 +15,7 @@ public class HomePage {
     private final By continueShoppingButton = By.xpath("//a[contains(text(),'Continue Shopping')]");
     private final By loggedInAsLabel = By.xpath("//a[contains(text(),'Logged in as')]");
     public final By cookieConsentButton = By.cssSelector("button.fc-button.fc-cta-consent.fc-primary-button");
-    private final By logoutButton = By.xpath("//button[@data-qa='logout-button']");
+    private final By logoutButton = By.xpath("//a[contains(text(),'Logout')]");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
